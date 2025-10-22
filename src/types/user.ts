@@ -4,3 +4,10 @@ export interface User {
   username: string;
   email: string;
 }
+
+
+export interface AuthUser {
+    id: string;
+    email: string;
+    role: string;
+}
