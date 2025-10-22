@@ -13,7 +13,7 @@ const UserListPage: React.FC = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get<User[]>(
-          "https://jsonplaceholder.typicode.com/users"
+          import.meta.env.VITE_API_URL
         );
         setUsers(response.data);
       } catch (err: any) {
